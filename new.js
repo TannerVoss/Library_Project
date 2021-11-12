@@ -11,7 +11,7 @@ const book = [{
 }, ];
 
 class Book {
-    cosntructor(id, title, author, read) {
+    constructor(id, title, author, read) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -51,6 +51,7 @@ class Library {
         newAuthor.textContent = author.value;
 
         const newCheckbox = document.createElement("input");
+        console.log(book.id);
         newCheckbox.id = newBook.id;
         newCheckbox.type = "checkbox"; //create checkbox for "read" property it TD cell
         newCheckbox.checked = read.checked; //able to add book that has been read
